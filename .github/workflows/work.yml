@@ -1,9 +1,10 @@
 name: work
 
 on:
-  schedule:
-    # Syntax: https://crontab.guru
-    - cron: "11 8 1-31 * *"
+  [push]
+  # schedule:
+  # Syntax: https://crontab.guru
+  # - cron: "11 8 1-31 * *"
 jobs:
   work:
     runs-on: ubuntu-latest
@@ -25,12 +26,12 @@ jobs:
           date=$(date -u)
           sed -r "s/@@@/$date/" ./reamde.md > ./README.md
           sed -r "s/@@@/$date/" ./src/index.ts > ./src/index-dev.ts
-          sed -r "s/@@@/$date/" ./src/app.tes > ./src/app-dev.ts
+          sed -r "s/@@@/$date/" ./src/app.ts > ./src/app-dev.ts
           sed -r "s/@@@/$date/" ./src/creator.ts > ./src/creator-dev.ts
           git config --global user.email $committer_email
           git config --global user.name $committer_name
           git remote set-url origin "https://x-access-token:$token@github.com/${{ github.repository }}"
           git status
-          git add -A
-          git commit -a -m "Updated MS AI Bot to $date"          
-          git push
+          # git add -A
+          # git commit -a -m "Updated MS AI Bot to $date"          
+          # git push
