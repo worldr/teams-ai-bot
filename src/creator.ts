@@ -14,3 +14,4 @@ if (!openAIKey) {
 
   console.log(`Created a new assistant with an ID of: ${assistant.id}`);
 })();
+// Tue Feb 20 08:33:27 UTC 2024
