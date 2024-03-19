@@ -19,7 +19,7 @@ const app = new Application({
 
 app.message("/reset", async (context, state) => {
   state.deleteConversationState();
-  await context.sendActivity("Ok lets start this over Mon Mar 18 08:33:10 UTC 2024.");
+  await context.sendActivity("Ok lets start this over Tue Mar 19 08:33:04 UTC 2024.");
 });
 
 app.ai.action(AI.HttpErrorActionName, async (context, state, data) => {
@@ -32,3 +32,4 @@ export default app;
 // Tue Feb 27 08:33:08 UTC 2024
 // Tue Mar  5 08:33:20 UTC 2024
 // Tue Mar 12 08:33:03 UTC 2024
+// Tue Mar 19 08:33:10 UTC 2024
