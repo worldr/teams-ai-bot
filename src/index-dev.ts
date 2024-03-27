@@ -34,7 +34,7 @@ const server = restify.createServer();
 server.use(restify.plugins.bodyParser());
 
 server.listen(process.env.port || process.env.PORT || 3978, () => {
-  console.log(`\nBot Started Tue Mar 26 08:33:56 UTC 2024, ${server.name} listening to ${server.url}`);
+  console.log(`\nBot Started Wed Mar 27 08:33:36 UTC 2024, ${server.name} listening to ${server.url}`);
 });
 server.post("/api/messages", async (req, res) => {
   await adapter.process(req, res as any, async (context) => {
