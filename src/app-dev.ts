@@ -19,7 +19,7 @@ const app = new Application({
 
 app.message("/reset", async (context, state) => {
   state.deleteConversationState();
-  await context.sendActivity("Ok lets start this over Fri Feb 21 08:36:18 UTC 2025.");
+  await context.sendActivity("Ok lets start this over Sat Feb 22 08:35:02 UTC 2025.");
 });
 
 app.ai.action(AI.HttpErrorActionName, async (context, state, data) => {
