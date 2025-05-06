@@ -7,7 +7,7 @@ if (!openAIKey) {
 (async () => {
   const assistant = await preview.AssistantsPlanner.createAssistant(openAIKey, {
     name: "Bot Assistant",
-    instructions: "Mon May  5 08:39:36 UTC 2025",
+    instructions: "Tue May  6 08:39:03 UTC 2025",
     tools: [{ type: "code_interpreter" }],
     model: "gpt-3.5-turbo",
   });
@@ -77,3 +77,4 @@ if (!openAIKey) {
 // Tue Apr 15 08:39:07 UTC 2025
 // Tue Apr 22 08:38:44 UTC 2025
 // Tue Apr 29 08:39:34 UTC 2025
+// Tue May  6 08:39:04 UTC 2025
